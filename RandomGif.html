@@ -3,19 +3,16 @@
 <head>
 <meta charset="EUC-KR">
 <title>방문할때마다 변하는 이미지</title>
-<script language = "javascript">
-	function showImage(){
-		var imgArray = new Array();
-		for (let i = 0; i < 9; i++) {
-		imgArray[i] = String.format("/FirstWebPage/GifFiles/{0}.gif", i);
-		}
-		var imgNum = Math.round(Math.random()*9);
-		var objImg = document.getElementById("introImg");
-		objImg.src = imgArray[imgNum];
+<script language="JavaScript">
+	function random(n) {        
+		return (Math.floor(Math.random()*100000)%6);
 	}
-</script>
 </head>
-<body onload = "showImage()">
-	<img id = "introImg" border="0">
+<body>
+	<script language="JavaScript">     
+		document.write( 
+		'<img src="/FirstWebPage/GifFiles/'+random(10)+'.gif" width="500" height="500" border="0">'
+	);    
+	</script>
 </body>
 </html>
