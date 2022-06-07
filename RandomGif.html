@@ -4,11 +4,11 @@
 <meta charset="EUC-KR">
 <title>방문할때마다 변하는 이미지</title>
 <script language = "javascript">
-	var imgArray = new Array();
-	for (let i = 0; i < 9; i++) {
-  imgArray[i] = String.format("/FirstWebPage/GifFiles/{0}.gif", i);
-  }
 	function showImage(){
+		var imgArray = new Array();
+		for (let i = 0; i < 9; i++) {
+		imgArray[i] = String.format("/FirstWebPage/GifFiles/{0}.gif", i);
+		}
 		var imgNum = Math.round(Math.random()*9);
 		var objImg = document.getElementById("introImg");
 		objImg.src = imgArray[imgNum];
