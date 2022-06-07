@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
+<meta charset="UTF-8">
 <title>방문할때마다 변하는 이미지</title>
 <script language="JavaScript">
-	function random(n) {        
+	function random(n) {
 		return (Math.floor(Math.random()*100000)%6);
 	}
+	</script>
 </head>
 <body>
-	<script language="JavaScript">     
+	<script language="JavaScript">
 		document.write( 
-		'<img src="/FirstWebPage/GifFiles/'+random(10)+'.gif" width="500" height="500" border="0">'
-	);    
+		'<img src="GifFiles/'+random(10)+'.gif" width="500" height="500" border="0">'
+	);
 	</script>
 </body>
 </html>
